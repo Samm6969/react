@@ -1,0 +1,19 @@
+const apple = {
+    name: 'hare krishna',
+    age: 30,
+    location: 'New York'
+};
+
+function getLocation(location) {
+    if(location) {
+        return <p>Location: {location}</p>
+    } 
+}
+
+const templateTwo = (
+    <div>
+      <h1>{apple.name}</h1>
+      <p>Age: {apple.age}</p>
+      {getLocation(apple.location)}
+    </div>
+);
